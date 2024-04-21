@@ -4,7 +4,7 @@ Este proyecto es una demostración de servicios web con arquitectura de microser
 
 Para obtener más información sobre la arquitectura y otros microservicios relacionados, consulta el repositorio principal del proyecto.
 
-[Repositorio principal del proyecto](enlace-al-repositorio-principal)
+[Repositorio principal del proyecto](https://github.com/dev-elliotesco/microservices-demo-springcloud)
 
 
 ## Requisitos
@@ -19,7 +19,6 @@ Para obtener más información sobre la arquitectura y otros microservicios rela
 - ZipKin
 - Spring Security con JWT
 - MySQL
-- PostgreSQL
 - Docker
 
 ## Instalación &  Ejecución
@@ -28,7 +27,7 @@ Para obtener más información sobre la arquitectura y otros microservicios rela
 
 ## Configuración
 
-Antes de ejecutar el microservicio, asegúrate de configurar las siguientes variables de entorno para el acceso a las bases de datos MySQL y PostgreSQL:
+Antes de ejecutar el microservicio, asegúrate de configurar las siguientes variables de entorno para el acceso a las bases de datos MySQL:
 
 ### MySQL
 
@@ -37,14 +36,6 @@ Antes de ejecutar el microservicio, asegúrate de configurar las siguientes vari
 - `MYSQL_DATABASE`: El nombre de la base de datos MySQL.
 - `MYSQL_USER`: El nombre de usuario de la base de datos MySQL.
 - `MYSQL_PASSWORD`: La contraseña del usuario de la base de datos MySQL.
-
-### PostgreSQL
-
-- `POSTGRES_HOST`: El host de la base de datos PostgreSQL.
-- `POSTGRES_PORT`: El puerto de la base de datos PostgreSQL.
-- `POSTGRES_DATABASE`: El nombre de la base de datos PostgreSQL.
-- `POSTGRES_USER`: El nombre de usuario de la base de datos PostgreSQL.
-- `POSTGRES_PASSWORD`: La contraseña del usuario de la base de datos PostgreSQL.
 
 Asegúrate de configurar estas variables de entorno adecuadamente antes de ejecutar el microservicio.
 
