@@ -1,0 +1,27 @@
+spring:
+    application:
+        name: user-ms
+    cloud:
+        config:
+          enabled: true
+          uri: http://localhost:8081
+
+# Configuración de MySQL
+    datasource:
+      url: jdbc:mysql://${MYSQL_HOST:database-host}:${MYSQL_PORT:3306}/${MYSQL_DATABASE:database-name}
+      username: ${MYSQL_USER:myusername}
+      password: ${MYSQL_PASSWORD:mypassword}
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+      database-platform: org.hibernate.dialect.MySQL8Dialect
+      hibernate:
+        ddl-auto: update
+
+# Configuración de Swagger
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+  api-docs:
+    enabled: true
+    path: /api-docs
