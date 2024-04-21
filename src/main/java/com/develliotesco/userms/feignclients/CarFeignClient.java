@@ -2,19 +2,16 @@ package com.develliotesco.userms.feignclients;
 
 import com.develliotesco.userms.model.Car;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "car-ms", url = "http://localhost:8002/cars")
+@FeignClient(name = "car-ms")
 public interface CarFeignClient {
 
-    @PostMapping()
+    @PostMapping("/cars")
     Car save(@RequestBody Car car);
 
-    @GetMapping("/byuser/{userId}")
+    @GetMapping("/cars/byuser/{userId}")
     List<Car> getByUserId(@PathVariable int userId);
 }
